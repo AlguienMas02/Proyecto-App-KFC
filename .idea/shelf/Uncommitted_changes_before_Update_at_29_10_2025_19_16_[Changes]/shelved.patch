@@ -1,0 +1,114 @@
+Index: app/src/main/res/layout/fragment_inicio.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout\r\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@color/white\">\r\n\r\n    <androidx.constraintlayout.widget.ConstraintLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"180dp\"\r\n        android:background=\"@color/spanish_red\"\r\n        app:layout_constraintTop_toTopOf=\"parent\">\r\n        <ImageView\r\n            android:layout_width=\"80dp\"\r\n            android:layout_height=\"40dp\"\r\n            android:layout_marginTop=\"24dp\"\r\n            android:src=\"@drawable/logo_kfc\"\r\n            android:scaleType=\"centerCrop\"\r\n            app:tint=\"@color/white\"\r\n            app:layout_constraintStart_toStartOf=\"parent\"\r\n            app:layout_constraintEnd_toEndOf=\"parent\"\r\n            app:layout_constraintTop_toTopOf=\"parent\"/>\r\n\r\n    </androidx.constraintlayout.widget.ConstraintLayout>\r\n  \r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_inicio.xml b/app/src/main/res/layout/fragment_inicio.xml
+--- a/app/src/main/res/layout/fragment_inicio.xml	(revision 67ee21658db90c6bd909efb25399f3acf2b548da)
++++ b/app/src/main/res/layout/fragment_inicio.xml	(date 1761783223046)
+@@ -1,17 +1,17 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout
++<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    android:background="@color/white">
++    android:background="@color/white"
++    tools:context="ui.inicio">
+ 
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="180dp"
+-        android:background="@color/spanish_red"
+-        app:layout_constraintTop_toTopOf="parent">
++        android:background="@color/spanish_red">
+         <ImageView
+             android:layout_width="80dp"
+             android:layout_height="40dp"
+@@ -24,6 +24,45 @@
+             app:layout_constraintTop_toTopOf="parent"/>
+ 
+     </androidx.constraintlayout.widget.ConstraintLayout>
+-  
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginHorizontal="30dp"
++        android:layout_marginTop="100dp"
++        android:orientation="vertical" >
++
++    <LinearLayout
++        style="?android:attr/buttonBarStyle"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="horizontal">
+ 
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
++        <Button
++            android:id="@+id/btnIngresar"
++            style="?android:attr/buttonBarButtonStyle"
++            android:layout_width="180dp"
++            android:layout_height="wrap_content"
++            android:background="@drawable/sh_bg_btn_carmine_pink"
++            android:text="@string/ingresar"
++            android:textAllCaps="false"
++            android:textColor="@color/white"
++            android:textSize="16sp"
++            android:textStyle="bold"
++            android:translationZ="5dp"/>
++
++        <Button
++            android:id="@+id/btnRegistrar"
++            style="?android:attr/buttonBarButtonStyle"
++            android:layout_width="200dp"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="-36dp"
++            android:background="@drawable/sh_bg_btn_bright_gray"
++            android:text="@string/registrar"
++            android:textAllCaps="false"
++            android:textColor="@color/gunmetal"
++            android:textSize="16sp"
++            android:textStyle="bold" />
++
++    </LinearLayout>
++
++</FrameLayout>
+\ No newline at end of file
+Index: app/src/main/res/drawable/sh_bg_btn_dark_devil.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/sh_bg_btn_dark_devil.xml b/app/src/main/res/drawable/sh_bg_btn_dark_devil.xml
+new file mode 100644
+--- /dev/null	(date 1761783321609)
++++ b/app/src/main/res/drawable/sh_bg_btn_dark_devil.xml	(date 1761783321609)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="utf-8"?>
++<selector xmlns:android="http://schemas.android.com/apk/res/android">
++
++</selector>
+\ No newline at end of file
+Index: app/src/main/java/com/example/proyectoappkfc/ui/inicio.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/proyectoappkfc/ui/inicio.kt b/app/src/main/java/com/example/proyectoappkfc/ui/inicio.kt
+new file mode 100644
+--- /dev/null	(date 1761783063654)
++++ b/app/src/main/java/com/example/proyectoappkfc/ui/inicio.kt	(date 1761783063654)
+@@ -0,0 +1,6 @@
++package com.example.proyectoappkfc.ui
++
++
++class inicio{
++
++}
+\ No newline at end of file
