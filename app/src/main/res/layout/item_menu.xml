@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/Producto_ItemVertical"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/sh_bg_item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/sh_bg_btn_white"
+        android:padding="2dp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/ic_plus"
+        app:tint="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSimboloDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="00"
+        android:textColor="@color/metallic_green"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/Producto_ItemVertical"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvDescuento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="%"
+        android:textColor="@color/metallic_green"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tvSimboloDesc"
+        app:layout_constraintStart_toEndOf="@id/tvSimboloDesc"/>
+
+    <TextView
+        android:id="@+id/tvSimboloRebaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:text="S/"
+        android:textColor="@color/black_olive"
+        app:layout_constraintTop_toBottomOf="@id/Producto_ItemVertical"
+        app:layout_constraintStart_toEndOf="@id/tvDescuento"/>
+
+    <TextView
+        android:id="@+id/tvRebaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="00.00"
+        android:textColor="@color/black_olive"
+        app:layout_constraintBottom_toBottomOf="@id/tvSimboloDesc"
+        app:layout_constraintStart_toEndOf="@id/tvSimboloRebaja"/>
+
+    <LinearLayout
+        android:layout_width="52dp"
+        android:layout_height="0.7dp"
+        android:background="@color/black_olive"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvSimboloRebaja"
+        app:layout_constraintStart_toStartOf="@id/tvSimboloRebaja"/>
+
+    <TextView
+        android:id="@+id/tvSimboloP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="S/"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvSimboloDesc"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvPrecio_ItemVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/black"
+        android:text="00.00"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tvSimboloP"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvProducto_itemVertical"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Promo Generica"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvSimboloP"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvDescripcion_Producto"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Descripcion Generica"
+        android:textColor="@color/black_olive"
+        android:textSize="7sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvProducto_itemVertical"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
