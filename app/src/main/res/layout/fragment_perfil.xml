@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:background="@drawable/sh_bg_gradient"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="66dp"
+            android:text="Hola"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="94dp"
+            android:text="Nombre Apellido"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPedidos"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/sh_bg_btn_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_bag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="14dp"
+                android:text="Pedidos"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDirecciones"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/sh_bg_btn_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_building"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="14dp"
+                android:text="Direcciones"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPago"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/sh_bg_btn_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="8dp"
+                android:tint="@color/black"
+                android:src="@drawable/ic_credit_card"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="14dp"
+                android:text="Pago"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuenta"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivDatosP"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintTop_toBottomOf="@id/tvCuenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:text="Datos Personales"
+        android:textSize="18dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintTop_toTopOf="@id/ivDatosP"
+        app:layout_constraintStart_toEndOf="@id/ivDatosP"/>
+
+    <ImageView
+        android:id="@+id/ivDirecciones"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/ic_building"
+        app:layout_constraintTop_toBottomOf="@id/ivDatosP"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="Direcciones"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintTop_toTopOf="@id/ivDirecciones"
+        app:layout_constraintStart_toEndOf="@id/ivDirecciones"/>
+
+    <ImageView
+        android:id="@+id/ivPedidos"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/ic_building"
+        app:layout_constraintTop_toBottomOf="@id/ivDirecciones"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:text="Historial de Pedidos"
+        android:textSize="18dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintTop_toTopOf="@id/ivPedidos"
+        app:layout_constraintStart_toEndOf="@id/ivPedidos"/>
+
+    <TextView
+        android:id="@+id/tvPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pago"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="332dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivMetodosPago"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintTop_toBottomOf="@id/tvPago"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:text="Métodos de Pago"
+        android:textSize="18dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintTop_toTopOf="@id/ivMetodosPago"
+        app:layout_constraintStart_toEndOf="@id/ivMetodosPago"/>
+
+    <TextView
+        android:id="@+id/tvPreferencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferencias"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="472dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/ivAjustes"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintTop_toBottomOf="@id/tvPreferencias"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="Ajustes"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintTop_toTopOf="@id/ivAjustes"
+        app:layout_constraintStart_toEndOf="@id/ivAjustes"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
