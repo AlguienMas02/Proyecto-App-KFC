@@ -50,6 +50,7 @@
             android:gravity="center|start"
             android:text="% Promos"
             android:textColor="@color/black_olive" />
+
         <TextView
             android:layout_width="122dp"
             android:layout_height="44dp"
@@ -64,40 +65,16 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivBannerPromo">
-
-        <ImageView
-            android:layout_width="8dp"
-            android:layout_height="8dp"
-            android:layout_marginEnd="4dp"
-            android:background="@drawable/sh_bg_dot_selected" />
-
-        <ImageView
-            android:layout_width="8dp"
-            android:layout_height="8dp"
-            android:layout_marginEnd="4dp"
-            android:background="@drawable/sh_bg_dot_noselected" />
-
-    </LinearLayout>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="16sp"
         android:text="Podrás usar tus cupones al momento de pagar, ¡y \ncon un solo toque los aplicas!"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/llTab" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -115,8 +92,8 @@
             android:id="@+id/tvExclusivo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
             android:layout_marginStart="48dp"
+            android:layout_marginTop="18dp"
             android:text="Cupón"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -140,8 +117,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:layout_marginEnd="18dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
             android:text="Twister y Papas Gratis en tu primera compra desde \nS/9.90"
             android:textColor="@android:color/black"
             android:textSize="12sp"
@@ -149,17 +126,16 @@
             app:layout_constraintTop_toBottomOf="@id/tvTituloPromo" />
 
         <Button
-            android:layout_width="105dp"
-            android:layout_height="35dp"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
             android:layout_marginStart="18dp"
-android:background="@drawable/sh_bg_btn_burgundy"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/sh_bg_btn_burgundy"
             android:text="Ver promo"
+            android:textColor="@color/white"
             android:textSize="12sp"
-            android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
