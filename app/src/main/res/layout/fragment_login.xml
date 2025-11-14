@@ -14,7 +14,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
-        android:id="@+id/iv_logo"
+        android:id="@+id/ivLogo"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -25,7 +25,7 @@
         app:tint="@color/spanish_red" />
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tvTitulo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -35,10 +35,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
 
     <TextView
-        android:id="@+id/tv_continuar_celular"
+        android:id="@+id/tvContinuarCelular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -46,21 +46,20 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_phone"
+        android:id="@+id/tilCelular"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_continuar_celular"
+        app:layout_constraintTop_toBottomOf="@id/tvContinuarCelular"
         app:prefixTextColor="@android:color/black">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txt_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Número de celular"
@@ -69,7 +68,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_continuar"
+        android:id="@+id/btnContinuar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -83,10 +82,10 @@
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/til_phone" />
+        app:layout_constraintTop_toBottomOf="@id/tilCelular" />
 
     <TextView
-        android:id="@+id/tv_puedes"
+        android:id="@+id/tvPuedes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -94,10 +93,10 @@
         android:textColor="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_continuar" />
+        app:layout_constraintTop_toBottomOf="@id/btnContinuar" />
 
     <Button
-        android:id="@+id/btn_continuar_google"
+        android:id="@+id/btnContinuarGoogle"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -115,11 +114,10 @@
         app:iconTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_puedes"
+        app:layout_constraintTop_toBottomOf="@id/tvPuedes"
         app:strokeColor="@android:color/darker_gray" />
 
     <Button
-        android:id="@+id/btn_invitado"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -130,16 +128,15 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_continuar_google" />
+        app:layout_constraintTop_toBottomOf="@id/btnContinuarGoogle" />
 
 
     <TextView
-        android:id="@+id/tv_legal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Al registrarme, acepto estos Términos y Condiciones y la Política de Privacidad"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/black_olive"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

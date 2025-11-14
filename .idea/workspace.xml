@@ -124,12 +124,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4e87ef3-b301-4bf9-81a5-690d75682172" name="Changes" comment="agregado Promos">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_datos.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_recojo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_cupones.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_cupones.xml" afterDir="false" />
+    <list default="true" id="f4e87ef3-b301-4bf9-81a5-690d75682172" name="Changes" comment="avance datos">
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763000591618</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="avance datos">
+      <option name="closed" value="true" />
+      <created>1763096060880</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1763096060881</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -373,7 +377,8 @@
     <MESSAGE value="waagregado items y mejora de inicio" />
     <MESSAGE value="perfil" />
     <MESSAGE value="agregado Promos" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregado Promos" />
+    <MESSAGE value="avance datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="avance datos" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
