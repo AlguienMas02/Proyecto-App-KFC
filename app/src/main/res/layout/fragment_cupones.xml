@@ -125,15 +125,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvTituloPromo" />
 
-        <Button
+        <TextView
             android:layout_width="115dp"
             android:layout_height="40dp"
+            android:gravity="center"
             android:layout_marginStart="18dp"
             android:layout_marginBottom="18dp"
             android:background="@drawable/sh_bg_btn_burgundy"
             android:text="Ver promo"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="14sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
