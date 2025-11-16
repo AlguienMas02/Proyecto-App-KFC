@@ -9,142 +9,266 @@
         android:id="@+id/tvDatosPersonales"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:text="Datos Personales"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="64dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
         android:id="@+id/tvNombreApellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="normal"
-        android:textColor="@color/black"
-        android:text="Nombre y Apellido"
-        android:textSize="18sp"
-        android:layout_marginTop="52dp"
         android:layout_marginStart="18dp"
-        app:layout_constraintTop_toBottomOf="@id/tvDatosPersonales"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_marginTop="52dp"
+        android:text="Nombre y Apellido"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDatosPersonales" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="normal"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="2dp"
         android:text="Nombre Apellido"
         android:textColor="@color/black_olive"
         android:textSize="16dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintTop_toBottomOf="@id/tvNombreApellido"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreApellido" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNombreApellido"
+        app:tint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
+        android:text="Editar"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNombreApellido" />
 
     <LinearLayout
         android:layout_width="315dp"
         android:layout_height="0.5dp"
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="@id/tvNombreApellido"
-        app:layout_constraintTop_toBottomOf="@id/tvNombreApellido"/>
+        app:layout_constraintTop_toBottomOf="@id/tvNombreApellido" />
 
 
     <TextView
         android:id="@+id/tvCelular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="normal"
-        android:text="Número de celular"
-        android:textSize="18dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="78dp"
-        app:layout_constraintTop_toBottomOf="@id/tvNombreApellido"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:text="Número de celular"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreApellido" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="normal"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="2dp"
         android:text="999 888 777"
         android:textColor="@color/black_olive"
         android:textSize="16dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintTop_toBottomOf="@id/tvCelular"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCelular" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCelular"
+        app:tint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
+        android:text="Editar"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCelular" />
 
     <LinearLayout
         android:layout_width="315dp"
         android:layout_height="0.5dp"
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="@id/tvCelular"
-        app:layout_constraintTop_toBottomOf="@id/tvCelular"/>
+        app:layout_constraintTop_toBottomOf="@id/tvCelular" />
 
     <TextView
         android:id="@+id/tvDocumento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="normal"
-        android:text="Documento de Identidad"
-        android:textSize="18dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="78dp"
-        app:layout_constraintTop_toBottomOf="@id/tvCelular"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:text="Documento de Identidad"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCelular" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="normal"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="2dp"
         android:text="DNI: 87654321"
         android:textColor="@color/black_olive"
         android:textSize="16dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintTop_toBottomOf="@id/tvDocumento"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDocumento" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvDocumento"
+        app:tint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
+        android:text="Editar"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvDocumento" />
 
     <LinearLayout
         android:layout_width="315dp"
         android:layout_height="0.5dp"
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="@id/tvDocumento"
-        app:layout_constraintTop_toBottomOf="@id/tvDocumento"/>
+        app:layout_constraintTop_toBottomOf="@id/tvDocumento" />
 
     <TextView
         android:id="@+id/tvFechaNacimiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="normal"
-        android:text="Fecha de Nacimiento"
-        android:textSize="18dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="78dp"
-        app:layout_constraintTop_toBottomOf="@id/tvDocumento"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:text="Fecha de Nacimiento"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDocumento" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="normal"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="2dp"
         android:text="01/01/2025"
         android:textColor="@color/black_olive"
         android:textSize="16dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvFechaNacimiento"
+        app:tint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
+        android:text="Editar"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvFechaNacimiento" />
+
     <LinearLayout
         android:layout_width="315dp"
         android:layout_height="0.5dp"
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="@id/tvFechaNacimiento"
-        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento"/>
+        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento" />
+
+    <TextView
+        android:id="@+id/tvCuentas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Cuentas Conectadas"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento"
+        app:layout_constraintStart_toStartOf="@id/tvFechaNacimiento"/>
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/btnContinuarGoogle"
+        android:layout_width="120dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:cornerRadius="124dp"
+        app:icon="@drawable/ic_google_logo"
+        app:iconGravity="textStart"
+        app:iconPadding="4dp"
+        app:iconTint="@null"
+        app:layout_constraintStart_toStartOf="@id/tvCuentas"
+        app:layout_constraintTop_toBottomOf="@id/tvCuentas"
+        app:strokeColor="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar cuenta"
+        android:textColor="@color/burgundy"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="@id/btnContinuarGoogle"
+        app:layout_constraintTop_toBottomOf="@id/btnContinuarGoogle"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
