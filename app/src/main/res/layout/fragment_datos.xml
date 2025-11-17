@@ -6,7 +6,7 @@
 
 
     <TextView
-        android:id="@+id/tvDatosPersonales"
+        android:id="@+id/tvAcercaDe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -18,9 +18,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/ic_flecha_izquierda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvAcercaDe"/>
 
     <TextView
-        android:id="@+id/tvNombreApellido"
+        android:id="@+id/tvNosotros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
@@ -30,7 +37,7 @@
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDatosPersonales" />
+        app:layout_constraintTop_toBottomOf="@id/tvAcercaDe" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,7 +49,7 @@
         android:textSize="16dp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvNombreApellido" />
+        app:layout_constraintTop_toBottomOf="@id/tvNosotros" />
 
     <ImageView
         android:layout_width="18dp"
@@ -51,7 +58,7 @@
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvNombreApellido"
+        app:layout_constraintTop_toTopOf="@id/tvNosotros"
         app:tint="@color/black" />
 
     <TextView
@@ -62,18 +69,18 @@
         android:text="Editar"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvNombreApellido" />
+        app:layout_constraintTop_toTopOf="@id/tvNosotros" />
 
     <LinearLayout
         android:layout_width="315dp"
         android:layout_height="0.5dp"
         android:layout_marginTop="48dp"
-        app:layout_constraintStart_toStartOf="@id/tvNombreApellido"
-        app:layout_constraintTop_toBottomOf="@id/tvNombreApellido" />
+        app:layout_constraintStart_toStartOf="@id/tvNosotros"
+        app:layout_constraintTop_toBottomOf="@id/tvNosotros" />
 
 
     <TextView
-        android:id="@+id/tvCelular"
+        android:id="@+id/tvTerminos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
@@ -83,7 +90,7 @@
         android:textSize="18dp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvNombreApellido" />
+        app:layout_constraintTop_toBottomOf="@id/tvNosotros" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -95,7 +102,7 @@
         android:textSize="16dp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvCelular" />
+        app:layout_constraintTop_toBottomOf="@id/tvTerminos" />
 
     <ImageView
         android:layout_width="18dp"
@@ -104,7 +111,7 @@
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvCelular"
+        app:layout_constraintTop_toTopOf="@id/tvTerminos"
         app:tint="@color/black" />
 
     <TextView
@@ -115,17 +122,17 @@
         android:text="Editar"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvCelular" />
+        app:layout_constraintTop_toTopOf="@id/tvTerminos" />
 
     <LinearLayout
         android:layout_width="315dp"
         android:layout_height="0.5dp"
         android:layout_marginTop="48dp"
-        app:layout_constraintStart_toStartOf="@id/tvCelular"
-        app:layout_constraintTop_toBottomOf="@id/tvCelular" />
+        app:layout_constraintStart_toStartOf="@id/tvTerminos"
+        app:layout_constraintTop_toBottomOf="@id/tvTerminos" />
 
     <TextView
-        android:id="@+id/tvDocumento"
+        android:id="@+id/tvPolitica"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
@@ -135,7 +142,7 @@
         android:textSize="18dp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvCelular" />
+        app:layout_constraintTop_toBottomOf="@id/tvTerminos" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -147,7 +154,7 @@
         android:textSize="16dp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDocumento" />
+        app:layout_constraintTop_toBottomOf="@id/tvPolitica" />
 
     <ImageView
         android:layout_width="18dp"
@@ -156,7 +163,7 @@
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvDocumento"
+        app:layout_constraintTop_toTopOf="@id/tvPolitica"
         app:tint="@color/black" />
 
     <TextView
@@ -167,17 +174,17 @@
         android:text="Editar"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvDocumento" />
+        app:layout_constraintTop_toTopOf="@id/tvPolitica" />
 
     <LinearLayout
         android:layout_width="315dp"
         android:layout_height="0.5dp"
         android:layout_marginTop="48dp"
-        app:layout_constraintStart_toStartOf="@id/tvDocumento"
-        app:layout_constraintTop_toBottomOf="@id/tvDocumento" />
+        app:layout_constraintStart_toStartOf="@id/tvPolitica"
+        app:layout_constraintTop_toBottomOf="@id/tvPolitica" />
 
     <TextView
-        android:id="@+id/tvFechaNacimiento"
+        android:id="@+id/tvTratamientoDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
@@ -187,7 +194,7 @@
         android:textSize="18dp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDocumento" />
+        app:layout_constraintTop_toBottomOf="@id/tvPolitica" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -199,7 +206,7 @@
         android:textSize="16dp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento" />
+        app:layout_constraintTop_toBottomOf="@id/tvTratamientoDatos" />
 
     <ImageView
         android:layout_width="18dp"
@@ -208,7 +215,7 @@
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvFechaNacimiento"
+        app:layout_constraintTop_toTopOf="@id/tvTratamientoDatos"
         app:tint="@color/black" />
 
     <TextView
@@ -219,14 +226,14 @@
         android:text="Editar"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tvFechaNacimiento" />
+        app:layout_constraintTop_toTopOf="@id/tvTratamientoDatos" />
 
     <LinearLayout
         android:layout_width="315dp"
         android:layout_height="0.5dp"
         android:layout_marginTop="48dp"
-        app:layout_constraintStart_toStartOf="@id/tvFechaNacimiento"
-        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento" />
+        app:layout_constraintStart_toStartOf="@id/tvTratamientoDatos"
+        app:layout_constraintTop_toBottomOf="@id/tvTratamientoDatos" />
 
     <TextView
         android:id="@+id/tvCuentas"
@@ -237,8 +244,8 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento"
-        app:layout_constraintStart_toStartOf="@id/tvFechaNacimiento"/>
+        app:layout_constraintTop_toBottomOf="@id/tvTratamientoDatos"
+        app:layout_constraintStart_toStartOf="@id/tvTratamientoDatos"/>
 
     <Button
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
